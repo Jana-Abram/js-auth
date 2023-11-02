@@ -34,9 +34,5 @@
 		&:focus {
 			border-color: s.color(main);
 		}
-
-		&--error {
-			background-color: s.color(red) !important;
-		}
 	}
 }
