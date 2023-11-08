@@ -67,9 +67,11 @@ router.get('/logout', function (req, res) {
 
 // Підключіть файли роутів
 const auth = require('./auth')
+const user = require('./user')
 
 // Об'єднайте файли роутів за потреби
 router.use('/', auth)
+router.use('/', user)
 
 // Підключаємо роутер до бек-енду
 module.exports = router
